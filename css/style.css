@@ -1,42 +1,25 @@
 /* reset */
 
-*{
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
-}
-.cleafix::after{
-    content: "";
-    display: table;
-    clear: both;
+    box-sizing: border-box;
 }
 
-.relative{
-    position: relative
+.relative {
+    position: relative;
 }
 
-.absolute{
+.absolute {
     position: absolute;
 }
 
-/* header fissato allo schermo */
+/* nav fissato allo schermo */
 
-header{
-    width: 100vw;
-    height: 10vh;
-    position: fixed;
-    background-color: transparent;
-}
-.number-map{
+.number-map {
     right: 0;
+    z-index: 1;
     margin-top: 10px;
-}
-
-div{
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    display: inline-block;
 }
 
 ul li {
@@ -44,38 +27,66 @@ ul li {
     display: inline-block;
 }
 
-ul li a{
+ul li a {
     width: 50px;
     height: 50px;
-    text-decoration: none;
-    text-decoration-line: none;
-    background-color: white;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
     margin: 0 10px;
     display: block;
-    border-radius: 50%;
-    color: black;
+    font-size: 20px;
     font-weight: 900;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration-line: none;
+    background-color: white;
 }
 
-/* 
-a{
-    text-decoration: none;
-    text-decoration-line: none;
-    text-align: center;
-    transform: translate(-50%,-50%);
-    vertical-align: middle;
-    border: 3px solid green;
+/* corpo della pagina */
+
+
+.first-shoes, .second-shoes, .third-shoes {
+    width: 100vw;
+    height: 100vh;
 }
-/* 
-.tap-map{
-    background-color: white;
-    color: black;
-    font-size: xxx-large;
-    border-radius: 50%;
-    background-color: black;
-    display: inline-block;
+
+.first-shoes{
+    background-color: red;
 }
- */ 
+
+.second-shoes{
+    background-color: green;
+}
+.third-shoes{
+    background-color: yellow;
+}
+
+img {
+    width: 100%;
+}
+
+section > div{
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section  h1 {
+ text-transform: uppercase;
+ font-size: 3rem;
+ font-weight: 900;
+ color: rgb(227 227 48);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+.color-yellow{
+     color: rgb(227 227 48);
+}
+
+.color-green{
+    color: green;
+}
