@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .relative {
@@ -19,6 +20,7 @@
 .number-map {
     right: 0;
     z-index: 1;
+    position: fixed;
     margin-top: 10px;
 }
 
@@ -44,19 +46,22 @@ ul li a {
 /* corpo della pagina */
 
 
-.first-shoes, .second-shoes, .third-shoes {
+.first-shoes,
+.second-shoes,
+.third-shoes {
     width: 100vw;
-    height: 100vh;
+    height: 99vh;
 }
 
-.first-shoes{
+.first-shoes {
     background-color: red;
 }
 
-.second-shoes{
+.second-shoes {
     background-color: green;
 }
-.third-shoes{
+
+.third-shoes {
     background-color: yellow;
 }
 
@@ -64,29 +69,28 @@ img {
     width: 100%;
 }
 
-section > div{
+/* div centrale */
+
+section>div {
     width: 50%;
-    height: 50%;
     top: 50%;
     left: 50%;
+    text-align: center;
     transform: translate(-50%, -50%);
 }
 
-section  h1 {
- text-transform: uppercase;
- font-size: 3rem;
- font-weight: 900;
- color: rgb(227 227 48);
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
+section h1 {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 900;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
-.color-yellow{
-     color: rgb(227 227 48);
+.color-yellow {
+    color: rgb(227 227 48);
 }
 
-.color-green{
+.color-green {
     color: green;
 }
